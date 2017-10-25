@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $color-black;
+    color: $color-white;
+}
+
+a:focus,
+input:focus {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.btn {
+    padding: 6px 20px;
+}

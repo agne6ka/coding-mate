@@ -1,0 +1,31 @@
+@mixin media-query($media) {
+  @if $media == hd {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $media == nonhd {
+    @media screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $media == phone {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media == phonexs {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  } @else if $media == notphone {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $media) {
+      @content;
+    }
+  }
+}

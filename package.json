@@ -1,0 +1,27 @@
+{
+  "name": "coding_mate",
+  "version": "1.0.0",
+  "description": "{{ Kumpela od Kodu }}",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agne6ka/coding_mate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agne6ka/coding_mate/issues"
+  },
+  "homepage": "https://github.com/agne6ka/coding_mate#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.16.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
+  }
+}

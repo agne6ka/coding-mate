@@ -38,3 +38,14 @@
   3. Changing password
   
 ### How to start project?
+
+  1. Clone repo
+  2. Cd to project path
+  3. Type `composer install` then `npm install`
+  4. Compile assets commands:
+  * `./node_modules/.bin/encore dev --watch`
+  * `./node_modules/.bin/encore dev-server`
+  * `./node_modules/.bin/encore production`
+  
+  Tips:
+  * [install node on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04)
