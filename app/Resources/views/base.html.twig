@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{ asset('build/styles.css') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    <body{% if bodyclass is defined %} class="{{ bodyclass }}"{% endif %}>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
         <script src="{{ asset('build/scripts.js') }}"></script>
