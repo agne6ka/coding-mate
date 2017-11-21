@@ -15,8 +15,16 @@
     .row-line {
         border-top: 1px solid $color-white;
     }
+    .col-md-4 {
+        padding-right: 50px;
+    }
+    &-about,
+    &-posts,
+    &-events {
+        padding: 40px;
+    }
     &-legal {
-        padding-top: 10px;
+        padding-top: 25px;
         &_copyright,
         &_rules {
             display: inline-block;
@@ -34,4 +42,14 @@
             }
         }
     }
-}
+    &-posts {
+        &_item {
+            padding-top: 20px;
+            .title {
+                font-weight: 600;
+            }
+            .date {
+                font-style: italic;
+            }
+        }
+    }
