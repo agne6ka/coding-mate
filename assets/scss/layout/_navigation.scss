@@ -1,3 +1,19 @@
-.navigation {
-
+.navi {
+    height: 50px;
+    background: $color-purple;
+    background: linear-gradient(to right, $color-purple, $color-aqua);
+    &-list {
+        a {
+            color: $color-white;
+        }
+        li {
+            font-size: 1.2em;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        & &_brand {
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+    }
 }

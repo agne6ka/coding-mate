@@ -1,0 +1,21 @@
+<nav class="navi">
+    <div class="container">
+        <div class="nav">
+            <ul class="navi-list">
+                <li class="active"><a href="#">About WIT</a></li>
+                <li><a href="#">About Kumpela</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li class="navi-list_brand"><a href="{{ path('homepage') }}">{ { Kumpela od Kodu  } }</a></li>
+                <li><a href="#">Blog by Kumpela</a></li>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                    <li><a href="{{ path('fos_user_profile_show') }}">My account</a></li>
+                    <li><a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a></li>
+                {% else %}
+                    <li><a href="{{ path('fos_user_registration_register') }}">Register</a></li>
+                    <li class="active"><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

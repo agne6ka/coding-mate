@@ -3,19 +3,24 @@
 'utils/variables';
 
 @import
-'vendors/normalize';
-
-@import
 'pages/pages';
 
 @import
-'layout/navigation';
+'layout/navigation',
+'layout/header',
+'layout/footer';
 
 @import
 'components/forms',
+'components/subscribe',
 'components/posts';
 
 @import
 'base/base',
 'base/typography',
 'base/common';
+
+@import
+'vendors/normalize',
+'vendors/bootstrap',
+'vendors/bootstrap-theme';
