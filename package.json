@@ -21,7 +21,11 @@
   "homepage": "https://github.com/agne6ka/coding_mate#readme",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.16.0",
+    "include-media": "^1.4.9",
+    "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "slick-carousel": "^1.8.1",
+    "throttle-debounce": "^1.0.1"
   }
 }

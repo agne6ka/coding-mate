@@ -6,3 +6,12 @@ $color-purple-alpha: rgba(71, 66, 132, .6);
 $color-aqua: #237491;
 $color-aqua-alpha: rgba(35, 116, 145, .6);
 $colo-blue-boston: #338eab;
+
+$breakpoints: (
+        phone-s: 320px,
+        phone-m: 480px,
+        tablet-s: 768px,
+        tablet-m: 990px,
+        desktop-s: 1024px,
+        desktop-m: 1060px
+);

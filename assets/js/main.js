@@ -1,12 +1,21 @@
-import Component from './components/component';
+import $ from "jquery";
+
+import Carousel from './components/carousel';
+
 
 class App {
     constructor() {
         this.init();
+        this.initPlugins();
     }
 
     init() {
-        let component = new Component();
+    }
+
+    initPlugins() {
+        let carousel = new Carousel({slider: $('.header-carousel')});
+
+        carousel.startSlick();
     }
 }
 
