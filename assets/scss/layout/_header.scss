@@ -3,4 +3,9 @@
         margin: auto;
         display: block;
     }
+    &-carousel {
+        max-width: 1280px;
+        margin: auto;
+        overflow: hidden;
+    }
 }

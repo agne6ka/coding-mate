@@ -9,8 +9,10 @@ class Carousel {
             settings: {
                 dots: true,
                 arrows: true,
-                dotsClass: 'box-dots-el',
+                dotsClass: 'slick-dots',
                 appendDots: $('.header-carousel'),
+                prevArrow: '<a class="slick-prev slick-arrow">&lsaquo;</a>',
+                nextArrow: '<a class="slick-next slick-arrow">&rsaquo;</a>',
                 slidesToShow: 1
             }
         };
